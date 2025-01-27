@@ -6,6 +6,12 @@
   --color-body: #918ca4;
 }
 
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
 /* TYPOGRAPHY */
 html {
   /* 62.5% of 16px = 10px */
@@ -168,4 +174,69 @@ a {
   display: inline-flex;
   justify-content: center;
   align-items: center;
+}
+
+/* BUTTONS */
+.button {
+  background: none;
+  border-radius: 40px;
+  border: 0;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.8rem;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+  padding: 2rem 3rem;
+  text-transform: uppercase;
+  white-space: nowrap;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.button--primary {
+  background: var(--color-headings);
+  color: #fff;
+}
+
+.button--primary:hover {
+  background: #09367f;
+}
+
+.button--secondary {
+  background: var(--color-secondary);
+  color: #fff;
+}
+
+.button--secondary:hover {
+  background: #43eeff;
+}
+
+.button--accent {
+  background: var(--color-accent);
+  color: #fff;
+}
+
+.button--accent:hover {
+  background: #ff6845;
+}
+
+.button--outline {
+  background: #fff;
+  border: 2px solid var(--color-headings);
+}
+
+.button--outline:hover {
+  background: var(--color-headings);
+  color: #fff;
+}
+
+.button--block {
+  width: 100%;
+  display: inline-block;
+}
+
+@media screen and (min-width: 1024px) {
+  .button {
+    font-size: 1.5rem;
+  }
 }
