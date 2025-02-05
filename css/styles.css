@@ -467,19 +467,6 @@ a {
   }
 }
 
-/* Collapsible */
-.collapsible {
-}
-
-.collapsible__header {
-  display: flex;
-  justify-content: space-between;
-}
-
-.collapsible__heading {
-  margin: 0;
-}
-
 /* TESTIMONIAL */
 .testimonial {
   padding: 4rem;
@@ -549,4 +536,38 @@ a {
   .callout__content {
     text-align: left;
   }
+}
+
+/* Collapsible */
+.collapsible {
+}
+
+.collapsible__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.collapsible__heading {
+  margin: 0;
+}
+
+.collapsible__chevron {
+  transform: rotate(-90deg);
+  transition: transform 0.3s;
+}
+
+.collapsible__content {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.collapsible--expanded .collapsible__chevron {
+  transform: rotate(0);
+}
+
+.collapsible--expanded .collapsible__content {
+  max-height: 100vh;
+  opacity: 1;
 }
