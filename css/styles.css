@@ -756,3 +756,33 @@ a {
   max-width: 500px;
   margin: 0 auto;
 }
+
+/* FEATURES */
+.feature {
+  gap: 4rem 2rem;
+}
+.feature__heading {
+  font-size: 2.4rem;
+  font-weight: 500;
+  margin: 1rem 0;
+}
+.feature__image {
+  margin-top: 4rem;
+  width: 100%;
+}
+
+.feature__description {
+}
+
+@media screen and (min-width: 768px) {
+  .feature__content {
+    align-self: center;
+  }
+  .feature__icon {
+    width: 20px;
+    height: 20px;
+  }
+  .feature__image {
+    margin-top: 0;
+  }
+}
