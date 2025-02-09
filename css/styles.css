@@ -760,6 +760,7 @@ a {
 /* FEATURES */
 .feature {
   gap: 4rem 2rem;
+  margin: 12rem 0;
 }
 .feature__heading {
   font-size: 2.4rem;
@@ -771,16 +772,13 @@ a {
   width: 100%;
 }
 
-.feature__description {
+.feature:first-of-type {
+  margin-top: 6rem;
 }
 
 @media screen and (min-width: 768px) {
-  .feature__content {
-    align-self: center;
-  }
-  .feature__icon {
-    width: 20px;
-    height: 20px;
+  .feature:nth-of-type(even) .feature__content {
+    order: 2;
   }
   .feature__image {
     margin-top: 0;
