@@ -89,7 +89,7 @@ a {
 }
 
 .link-arrow::after {
-  content: "-->";
+  content: '-->';
   margin-left: 5px;
   transition: margin 0.15s;
 }
@@ -536,13 +536,11 @@ a {
 .callout {
   border-radius: 5px;
   padding: 4rem;
-  max-width: 760px;
 }
 
 .callout--primary {
   background: var(--color-primary);
   color: #fff;
-  margin: 3rem;
 }
 
 .callout__heading {
@@ -558,6 +556,10 @@ a {
 
 .callout__content {
   text-align: center;
+}
+
+.callout--signup {
+  transform: translateY(5rem);
 }
 
 @media screen and (min-width: 768px) {
