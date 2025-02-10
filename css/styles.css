@@ -565,7 +565,7 @@ a {
 @media screen and (min-width: 768px) {
   .callout .button {
     justify-self: center;
-    margin: 4rem 2rem;
+    margin: 0 2rem;
   }
 
   .callout .grid--1x2 {
@@ -821,6 +821,7 @@ a {
 /* FOOTER */
 .footer {
   background: #232323;
+  padding-top: 10rem;
 }
 
 .footer a {
