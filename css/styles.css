@@ -536,11 +536,13 @@ a {
 .callout {
   border-radius: 5px;
   padding: 4rem;
+  max-width: 760px;
 }
 
 .callout--primary {
   background: var(--color-primary);
   color: #fff;
+  margin: 3rem;
 }
 
 .callout__heading {
@@ -560,8 +562,8 @@ a {
 
 @media screen and (min-width: 768px) {
   .callout .button {
-    justify-self: start;
-    margin: 0 2rem;
+    justify-self: center;
+    margin: 4rem 2rem;
   }
 
   .callout .grid--1x2 {
